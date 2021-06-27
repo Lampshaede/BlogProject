@@ -1,7 +1,7 @@
 import Container from '@material-ui/core/Container';
 import MediaCard from './MediaCard';
 import { makeStyles } from '@material-ui/core/styles';
-
+import { Typography } from '@material-ui/core';
 const HomePage = () => {
 
   const useStyles = makeStyles({
@@ -9,7 +9,10 @@ const HomePage = () => {
       display: 'flex',
       alignItems: 'center', 
       justifyContent: 'space-around',
-    }
+    },
+    center: {
+      textAlign: 'center',
+    },
   });
   const classes = useStyles();
 
@@ -45,10 +48,15 @@ const HomePage = () => {
   },
 ]
   return (
+    <Container className={classes.center}>
+      <Typography variant="h2" >
+        Home
+      </Typography>
   <Container className={classes.container}>
     {blogPosts.map((post) => {
       return (<MediaCard serviceName={post.name} serviceImgPath={post.path} serviceURL={post.url} key={post.name} local={post.local}/>)
     })}
+  </Container>
   </Container>
     );
 }
