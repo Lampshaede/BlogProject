@@ -1,15 +1,12 @@
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import AppBar from "@material-ui/core/AppBar";
 import ToolBar from "@material-ui/core/Toolbar";
 import Slide from '@material-ui/core/Slide';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from "@material-ui/core";
-import { Link } from "react-router-dom";
-// import HomeIcon from '@material-ui/icons/Home';
-import { MaterialLink } from "@material-ui/core/Link";
-import Button from "@material-ui/core/Button";
+import Drawer from './Drawer'
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -45,9 +42,8 @@ const Navbar = (props) => {
     <HideOnScroll {...props}>
       <AppBar position="fixed">
         <ToolBar>
-          <Typography variant="h6" className={classes.title}>Fake Discord Panel</Typography>
-          <IconButton component={Link} to='/' edge="end" color="inherit" aria-label="menu">
-            <MenuIcon />
+          <Typography variant="h6" className={classes.title}>Luke's Amazing Website</Typography>
+          <IconButton component={Drawer} edge="end" color="inherit" aria-label="menu">
           </IconButton>
         </ToolBar>
       </AppBar>
