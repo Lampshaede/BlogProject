@@ -7,10 +7,12 @@ import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
+    minWidth: 300,
     maxWidth: 300,
-    minHeight: 275,
+    minHeight: 300,
     maxHeight: 300,
+    marginLeft: '20px',
+    marginTop: '20px',
   },
   title: {
     fontSize: 20,

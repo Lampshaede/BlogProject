@@ -6,29 +6,16 @@ import WebDevOverview from './components/WebDevOverview';
 import PasswordManagement from './components/PasswordManagement';
 import MediaCard from './components/MediaCard';
 import AboutMe from './components/AboutMe';
+import HomePage from './components/HomePage';
 
 function App() {
-  const blogPosts = [{
-    name: 'Password Management',
-    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858723371495194654/screen-lock-portrait_118698.png',
-    url: '/blog-post-2',
-    local: true,
-  },
-  {
-    name: 'Web Development Overview',
-    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858724186817560576/img_565446.png',
-    url: '/blog-post-1',
-    local: true,
-  }
-]
+  
   return (
     <>
     <Navbar />
     <Switch>
       <Route exact path='/'>
-        {blogPosts.map((post) => {
-          return (<MediaCard serviceName={post.name} serviceImgPath={post.path} serviceURL={post.url} key={post.name} local={post.local}/>)
-        })}
+        <HomePage />
       </Route>
       <Route path='/discord'>
         <Discord />
