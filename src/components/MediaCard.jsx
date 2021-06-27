@@ -1,8 +1,9 @@
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import { Link, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import CardActions from '@material-ui/core/CardActions';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
@@ -25,8 +26,19 @@ const useStyles = makeStyles({
   }
 });
 
-const MediaCard = ({serviceName, serviceImgPath, serviceURL}) => {
+const MediaCard = ({serviceName, serviceImgPath, serviceURL, local}) => {
   const classes=useStyles();
+let imageComponent;
+console.log(local);
+  if(local){
+    imageComponent = (<Link to={serviceURL}>
+      <img className={classes.img} src={serviceImgPath} alt={`${serviceName} Icon`} />
+      </Link>);
+  } else {
+    imageComponent = (<a href={serviceURL}>
+        <img className={classes.img} src={serviceImgPath} alt={`${serviceName} Icon`} />
+        </a>);
+  }
 
   return (
     <Card className={classes.root} >
@@ -37,9 +49,7 @@ const MediaCard = ({serviceName, serviceImgPath, serviceURL}) => {
       </CardContent>
       <CardActions style={{  alignItems: 'center',
   justifyContent: 'center'}}>
-    <a href={serviceURL}>
-      <img className={classes.img} src={serviceImgPath} alt={`${serviceName} Icon`} />
-      </a>
+      {imageComponent}
       </CardActions>
     </Card>
   )

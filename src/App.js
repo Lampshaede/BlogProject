@@ -11,12 +11,14 @@ function App() {
   const blogPosts = [{
     name: 'Password Management',
     path: 'https://cdn.discordapp.com/attachments/303544651200331776/858723371495194654/screen-lock-portrait_118698.png',
-    url: '/blog-post-2'
+    url: '/blog-post-2',
+    local: true,
   },
   {
     name: 'Web Development Overview',
     path: 'https://cdn.discordapp.com/attachments/303544651200331776/858724186817560576/img_565446.png',
-    url: '/blog-post-1'
+    url: '/blog-post-1',
+    local: true,
   }
 ]
   return (
@@ -25,7 +27,7 @@ function App() {
     <Switch>
       <Route exact path='/'>
         {blogPosts.map((post) => {
-          return (<MediaCard serviceName={post.name} serviceImgPath={post.path} serviceURL={post.url} key={post.name}/>)
+          return (<MediaCard serviceName={post.name} serviceImgPath={post.path} serviceURL={post.url} key={post.name} local={post.local}/>)
         })}
       </Route>
       <Route path='/discord'>
@@ -38,7 +40,7 @@ function App() {
         <PasswordManagement />
       </Route>
       <Route path='/contact'>
-        <MediaCard serviceName="Discord" serviceImgPath="https://cdn.discordapp.com/attachments/303544651200331776/858715171147743232/Discord-Logo-Color.png" serviceURL="https://discordapp.com" />
+        <MediaCard serviceName="Discord" serviceImgPath="https://cdn.discordapp.com/attachments/303544651200331776/858715171147743232/Discord-Logo-Color.png" serviceURL="https://discordapp.com" local={false}/>
       </Route>
       <Route path='/about'>
         <AboutMe />
