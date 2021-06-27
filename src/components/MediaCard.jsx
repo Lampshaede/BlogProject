@@ -21,8 +21,10 @@ const useStyles = makeStyles({
     marginBottom: 12,
   }, 
   img: {
-    maxWidth: '100%',
-    height: 'auto',
+    height: 'auto', 
+    width: 'auto', 
+    maxWidth: '225px', 
+    maxHeight: '225px',
   }
 });
 
