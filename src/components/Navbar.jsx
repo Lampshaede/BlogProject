@@ -5,7 +5,8 @@ import Slide from '@material-ui/core/Slide';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from "@material-ui/core";
-import Drawer from './Drawer'
+import Drawer from './Drawer';
+import { Link } from 'react-router-dom';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -42,7 +43,7 @@ const Navbar = (props) => {
     <HideOnScroll {...props}>
       <AppBar position="sticky">
         <ToolBar>
-          <Typography variant="h6" className={classes.title}>Luke's Amazing Website</Typography>
+          <Typography variant="h6" className={classes.title}><Link to='/' style={{color: '#ffffff',  textDecoration: "none"}}>Luke's Amazing Website</Link></Typography>
           <IconButton component={Drawer} edge="end" color="inherit" aria-label="menu">
           </IconButton>
         </ToolBar>

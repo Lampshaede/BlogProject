@@ -51,7 +51,6 @@ const Discord = () => {
   return (
     <DiscordOptionsContext.Provider value={discordOptions}>
       <DiscordMessages>
-        <DiscordMessage profile="clyde">Nobody will ever see this message. The header should cover it</DiscordMessage>
         <DiscordMessage profile="clyde">Welcome to Discord! Why don't we all take a moment to introduce ourselves?</DiscordMessage>
         <DiscordMessage profile="lamp">Hi I'm Luke!</DiscordMessage>
         <DiscordMessage profile="jon">Hello there</DiscordMessage>
