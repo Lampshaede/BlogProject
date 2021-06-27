@@ -27,19 +27,19 @@ const HomePage = () => {
   },
   {
     name: 'About Me',
-    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858724186817560576/img_565446.png',
+    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858750651177631764/assignment_ind1.png',
     url: '/about',
     local: true,
   },
   {
     name: 'Discord Demo',
-    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858724186817560576/img_565446.png',
+    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858752106822631424/format_color_fill1.png',
     url: '/discord',
     local: true,
   },
   {
     name: 'Contact',
-    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858724186817560576/img_565446.png',
+    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858750647909089290/contact_page1.png',
     url: '/contact',
     local: true,
   },

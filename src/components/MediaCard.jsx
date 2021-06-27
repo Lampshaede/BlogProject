@@ -23,10 +23,11 @@ const useStyles = makeStyles({
     marginBottom: 12,
   }, 
   img: {
-    height: 'auto', 
-    width: 'auto', 
-    maxWidth: '225px', 
+    minHeight: '150px',
+    minWidth: '150px',
     maxHeight: '225px',
+    maxWidth: '225px', 
+    objectFit: 'fill',
   }
 });
 
