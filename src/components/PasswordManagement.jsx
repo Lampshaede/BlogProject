@@ -1,5 +1,5 @@
 const PasswordManagement = () => {
-  return (<div>
+  return (<div style={{marginLeft: '1rem'}}>
     <p style={{textAlign: 'center'}}><strong>Password Management</strong></p>
     <p style={{textAlign: 'center'}}>Luke Lampman</p>
     <p style={{textAlign: 'center'}}>Manitoba Institute of Trades and Technology</p>
