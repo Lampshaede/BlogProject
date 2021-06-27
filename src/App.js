@@ -5,15 +5,17 @@ import Discord from './components/Discord';
 
 function App() {
   return (
-    <Route>
-        <Navbar />
-      <Switch exact path='/'>
-
-      </Switch>
-      <Switch exact path='/discord'>
+    <>
+    <Navbar />
+    <Switch>
+      <Route exact path='/'>
+        <span>Hello, this is home</span>
+      </Route>
+      <Route path='/discord'>
         <Discord />
-      </Switch>
-    </Route>    
+      </Route>
+    </Switch>  
+    </>  
       
   );
 }
