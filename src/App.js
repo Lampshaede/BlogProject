@@ -8,12 +8,25 @@ import MediaCard from './components/MediaCard';
 import AboutMe from './components/AboutMe';
 
 function App() {
+  const blogPosts = [{
+    name: 'Password Management',
+    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858723371495194654/screen-lock-portrait_118698.png',
+    url: '/blog-post-2'
+  },
+  {
+    name: 'Web Development Overview',
+    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858724186817560576/img_565446.png',
+    url: '/blog-post-1'
+  }
+]
   return (
     <>
     <Navbar />
     <Switch>
       <Route exact path='/'>
-        <span>Hello, this is home</span>
+        {blogPosts.map((post) => {
+          return (<MediaCard serviceName={post.name} serviceImgPath={post.path} serviceURL={post.url} key={post.name}/>)
+        })}
       </Route>
       <Route path='/discord'>
         <Discord />

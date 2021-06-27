@@ -19,7 +19,11 @@ const useStyles = makeStyles({
   },
   pos: {
     marginBottom: 12,
-  },  
+  }, 
+  img: {
+    maxWidth: '100%',
+    height: 'auto',
+  }
 });
 
 const MediaCard = ({serviceName, serviceImgPath, serviceURL}) => {
@@ -35,7 +39,7 @@ const MediaCard = ({serviceName, serviceImgPath, serviceURL}) => {
       <CardActions style={{  alignItems: 'center',
   justifyContent: 'center'}}>
     <a href={serviceURL}>
-      <img src={serviceImgPath} alt={`${serviceName} Icon`} />
+      <img className={classes.img} src={serviceImgPath} alt={`${serviceName} Icon`} />
       </a>
       </CardActions>
     </Card>

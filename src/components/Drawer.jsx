@@ -19,7 +19,7 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
 import CodeIcon from '@material-ui/icons/Code';
-
+import ScreenLockPortraitIcon from '@material-ui/icons/ScreenLockPortrait';
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -97,7 +97,7 @@ export default function TemporaryDrawer() {
           </ListItem>
           <ListItem component={Link} to='/blog-post-2' button className={classes.nested}>
             <ListItemIcon>
-              <CodeIcon />
+              <ScreenLockPortraitIcon />
             </ListItemIcon>
             <ListItemText primary="Passwords" />
           </ListItem>
