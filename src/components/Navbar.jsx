@@ -40,7 +40,7 @@ const Navbar = (props) => {
 
   return (
     <HideOnScroll {...props}>
-      <AppBar position="fixed">
+      <AppBar position="sticky">
         <ToolBar>
           <Typography variant="h6" className={classes.title}>Luke's Amazing Website</Typography>
           <IconButton component={Drawer} edge="end" color="inherit" aria-label="menu">

@@ -18,7 +18,7 @@ import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
-
+import CodeIcon from '@material-ui/icons/Code';
 
 const useStyles = makeStyles({
   list: {
@@ -80,12 +80,6 @@ export default function TemporaryDrawer() {
         </ListItemIcon>
             <ListItemText primary={'Discord Demo'} />
         </ListItem>
-      <ListItem component={Link} to='/contact' button key={'Contact'}>
-        <ListItemIcon>
-          <SubjectIcon />
-        </ListItemIcon>
-            <ListItemText primary={'Contact'} />
-        </ListItem>
         <ListItem button onClick={handleClick}>
         <ListItemIcon>
           <AssignmentIcon />
@@ -97,12 +91,24 @@ export default function TemporaryDrawer() {
         <List component="div" disablePadding>
           <ListItem component={Link} to='/blog-post-1' button className={classes.nested}>
             <ListItemIcon>
-              <HomeIcon />
+              <CodeIcon />
             </ListItemIcon>
-            <ListItemText primary="Home :)" />
+            <ListItemText primary="WebDev Brief" />
+          </ListItem>
+          <ListItem component={Link} to='/blog-post-2' button className={classes.nested}>
+            <ListItemIcon>
+              <CodeIcon />
+            </ListItemIcon>
+            <ListItemText primary="Passwords" />
           </ListItem>
         </List>
       </Collapse>
+      <ListItem component={Link} to='/contact' button key={'Contact'}>
+        <ListItemIcon>
+          <SubjectIcon />
+        </ListItemIcon>
+            <ListItemText primary={'Contact'} />
+        </ListItem>
       </List>
     </div>
   );
