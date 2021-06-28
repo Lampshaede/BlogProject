@@ -49,7 +49,7 @@ console.log(local);
         <img className={classes.img} src={serviceImgPath} alt={`${serviceName} Icon`} />
         </a>);
     textComponent = (<Typography className={classes.title} gutterBottom>
-      <a href={serviceURL}>
+      <a href={serviceURL} className={classes.title}>
       {serviceName}
       </a>
     </Typography>);
