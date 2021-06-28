@@ -19,7 +19,7 @@ const HomePage = () => {
   const blogPosts = [{
     name: 'Discord',
     path: 'https://cdn.discordapp.com/attachments/303544651200331776/858715171147743232/Discord-Logo-Color.png',
-    url: 'https://discordapp.com',
+    url: 'https://discord.gg/8y5fE4wm4M',
     local: false,
   },
   {
@@ -33,6 +33,9 @@ const HomePage = () => {
     <Container className={classes.center}>
       <Typography variant="h2" >
         Contact
+      </Typography>
+      <Typography variant="h6" >
+        Hi! If you want to contact feel free to send me a message on Instagram or Join my Discord server!
       </Typography>
   <Container className={classes.container}>
     {blogPosts.map((post) => {
