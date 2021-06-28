@@ -34,23 +34,30 @@ const useStyles = makeStyles({
 const MediaCard = ({serviceName, serviceImgPath, serviceURL, local}) => {
   const classes=useStyles();
 let imageComponent;
+let textComponent;
 console.log(local);
   if(local){
     imageComponent = (<Link to={serviceURL}>
       <img className={classes.img} src={serviceImgPath} alt={`${serviceName} Icon`} />
       </Link>);
+    textComponent = (<Typography className={classes.title} component={Link} to={serviceURL} gutterBottom>
+      {serviceName}
+    </Typography>)
   } else {
     imageComponent = (<a href={serviceURL}>
         <img className={classes.img} src={serviceImgPath} alt={`${serviceName} Icon`} />
         </a>);
+    textComponent = (<Typography className={classes.title} gutterBottom>
+      <a href={serviceURL}>
+      {serviceName}
+      </a>
+    </Typography>);
   }
 
   return (
     <Card className={classes.root} >
       <CardContent style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-      <Typography className={classes.title} component={Link} href={serviceURL}  gutterBottom>
-          {serviceName}
-        </Typography>
+      {textComponent}
       </CardContent>
       <CardActions style={{  alignItems: 'center',
   justifyContent: 'center'}}>
