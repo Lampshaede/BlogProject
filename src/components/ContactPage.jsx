@@ -24,7 +24,7 @@ const HomePage = () => {
   },
   {
     name: 'Instagram',
-    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858904050459213834/glyph-logo_May2016.png',
+    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858907320061919272/Instagram_Glyph_Gradient_RGB.png',
     url: 'https://www.instagram.com/lampshaede/',
     local: false,
   },
