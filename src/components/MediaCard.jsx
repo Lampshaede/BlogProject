@@ -17,7 +17,8 @@ const useStyles = makeStyles({
   title: {
     fontSize: 20,
     textAlign: 'center',
-    
+    color: '#000000',
+    textDecoration: 'none',
   },
   pos: {
     marginBottom: 12,
