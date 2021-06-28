@@ -7,6 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from "@material-ui/core";
 import Drawer from './Drawer';
 import { Link } from 'react-router-dom';
+import LampLogo from "./LampLogo";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -43,6 +44,9 @@ const Navbar = (props) => {
     <HideOnScroll {...props}>
       <AppBar position="sticky">
         <ToolBar>
+        <IconButton edge="start" component={Link} to='/' className={classes.menuButton} color="inherit" aria-label="menu">
+            <LampLogo />
+          </IconButton>
           <Typography variant="h6" className={classes.title}><Link to='/' style={{color: '#ffffff',  textDecoration: "none"}}>Luke's Amazing Website</Link></Typography>
           <IconButton component={Drawer} edge="end" color="inherit" aria-label="menu">
           </IconButton>
