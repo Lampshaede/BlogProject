@@ -17,16 +17,17 @@ const HomePage = () => {
   });
   const classes = useStyles();
 
-  const blogPosts = [{
+  const blogPosts = [
+    {
+      name: 'Learning Methods',
+      path: 'https://cdn.discordapp.com/attachments/303544651200331776/858920319409979432/history_edu.png',
+      url: '/blog-post-0',
+      local: true,
+    },
+    {
     name: 'Password Management',
     path: 'https://cdn.discordapp.com/attachments/303544651200331776/858723371495194654/screen-lock-portrait_118698.png',
     url: '/blog-post-2',
-    local: true,
-  },
-  {
-    name: 'Learning Methods',
-    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858920319409979432/history_edu.png',
-    url: '/blog-post-0',
     local: true,
   },
   {
@@ -67,11 +68,11 @@ const HomePage = () => {
   },
 ]
   return (
-    <Container className={classes.center}>
+    <Container maxWidth='xl' className={classes.center}>
       <Typography variant="h2" >
         Home
       </Typography>
-  <Container className={classes.container}>
+  <Container maxWidth='xl' className={classes.container}>
     {blogPosts.map((post) => {
       return (<MediaCard serviceName={post.name} serviceImgPath={post.path} serviceURL={post.url} key={post.name} local={post.local}/>)
     })}
