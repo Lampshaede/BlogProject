@@ -89,17 +89,17 @@ export default function TemporaryDrawer() {
       </ListItem>
         <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          <ListItem component={Link} to='/blog-post-1' button className={classes.nested}>
-            <ListItemIcon>
-              <CodeIcon />
-            </ListItemIcon>
-            <ListItemText primary="WebDev Brief" />
-          </ListItem>
           <ListItem component={Link} to='/blog-post-2' button className={classes.nested}>
             <ListItemIcon>
               <ScreenLockPortraitIcon />
             </ListItemIcon>
             <ListItemText primary="Passwords" />
+          </ListItem>
+          <ListItem component={Link} to='/blog-post-1' button className={classes.nested}>
+            <ListItemIcon>
+              <CodeIcon />
+            </ListItemIcon>
+            <ListItemText primary="WebDev Brief" />
           </ListItem>
           <ListItem component={Link} to='/blog-post-3' button className={classes.nested}>
             <ListItemIcon>

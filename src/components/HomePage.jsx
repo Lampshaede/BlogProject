@@ -9,6 +9,7 @@ const HomePage = () => {
       display: 'flex',
       alignItems: 'center', 
       justifyContent: 'space-around',
+      flexFlow: 'row wrap',
     },
     center: {
       textAlign: 'center',

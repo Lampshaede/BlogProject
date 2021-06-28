@@ -1,5 +1,5 @@
 const ObjectsPage = () => {
-  return (<div>
+  return (<div style={{marginLeft: '1rem'}}>
     <h1>Vending Machine Object in Javascript</h1>
     <p>For this exercise, students were required to make a vending machine in javascript that would be able to add snacks and buy snacks. This is a relatively simple practice assignment to teach the understanding of Object oriented programming.</p>
     <h2>Objects</h2>
