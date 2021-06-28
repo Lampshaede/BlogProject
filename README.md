@@ -12,13 +12,13 @@ What is your reader’s name?            George
 What demographic do they fall into?    26 y/o college dropout making a startup
 Where do they live?                    Brandon
 What is their job/role?                Entrepreneur
-What do they enjoy for fun?            He collects toothbrushes
-Why do they read your blog?            He doesn’t want to hire a software developer so he’s trying to learn on his own
+What do they enjoy for fun?            He collects toothbrushes 
+Why do they read your blog?            He doesn’t want to hire a software developer so he’s trying to learn on his own; he kind of empathizes with the slipshod minimalism I use
 
 When you write and edit your blog posts, consider writing for your persona.
 
 Website Instructions:
 Please describe how/where to access or run your website:
-My website can be found at https://modifiable-about-me.netlify.app/
-If you want to host the website yourself, after navigating to the correct folder, typing npm run start will open a development server on localhost:3000
+My website can be found at [https://modifiable-about-me.netlify.app/]
+If you want to host the website yourself, after navigating to the correct folder, typing `npm run start` will open a development server on localhost:3000
 

@@ -22,6 +22,12 @@ const HomePage = () => {
     url: 'https://discordapp.com',
     local: false,
   },
+  {
+    name: 'Instagram',
+    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858904050459213834/glyph-logo_May2016.png',
+    url: 'https://www.instagram.com/lampshaede/',
+    local: false,
+  },
 ]
   return (
     <Container className={classes.center}>
