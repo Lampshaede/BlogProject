@@ -7,6 +7,7 @@ import PasswordManagement from './components/PasswordManagement';
 import ContactPage from './components/ContactPage';
 import AboutMe from './components/AboutMe';
 import HomePage from './components/HomePage';
+import ObjectsPage from './components/ObjectsPage';
 
 function App() {
   
@@ -25,6 +26,9 @@ function App() {
       </Route>
       <Route path='/blog-post-2'>
         <PasswordManagement />
+      </Route>
+      <Route path='/blog-post-3'>
+        <ObjectsPage />
       </Route>
       <Route path='/contact'>
         <ContactPage />

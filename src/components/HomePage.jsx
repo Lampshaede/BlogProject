@@ -29,6 +29,12 @@ const HomePage = () => {
     local: true,
   },
   {
+    name: 'Objects Example Walkthrough',
+    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858724186817560576/img_565446.png',
+    url: '/blog-post-3',
+    local: true,
+  },
+  {
     name: 'About Me',
     path: 'https://cdn.discordapp.com/attachments/303544651200331776/858750651177631764/assignment_ind1.png',
     url: '/about',
