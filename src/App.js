@@ -10,6 +10,7 @@ import HomePage from './components/HomePage';
 import ObjectsPage from './components/ObjectsPage';
 import SSL from './components/SSL';
 import Learning from './components/Learning';
+import Rifter from './components/Rifter';
 function App() {
   
   return (
@@ -36,6 +37,9 @@ function App() {
       </Route>
       <Route path='/blog-post-4'>
         <SSL />
+      </Route>
+      <Route path='/blog-post-5'>
+        <Rifter />
       </Route>
       <Route path='/contact'>
         <ContactPage />

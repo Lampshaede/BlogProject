@@ -49,6 +49,12 @@ const HomePage = () => {
     local: true,
   },
   {
+    name: 'Rifter Speed Guide',
+    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858925986703212564/gamepad.png',
+    url: '/blog-post-5',
+    local: true,
+  },
+  {
     name: 'About Me',
     path: 'https://cdn.discordapp.com/attachments/303544651200331776/858750651177631764/assignment_ind1.png',
     url: '/about',
