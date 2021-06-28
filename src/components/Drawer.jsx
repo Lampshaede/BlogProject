@@ -20,6 +20,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
 import CodeIcon from '@material-ui/icons/Code';
 import ScreenLockPortraitIcon from '@material-ui/icons/ScreenLockPortrait';
+import CreateIcon from '@material-ui/icons/Create';
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -89,6 +90,12 @@ export default function TemporaryDrawer() {
       </ListItem>
         <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
+          <ListItem component={Link} to='/blog-post-0' button className={classes.nested}>
+            <ListItemIcon>
+              <CreateIcon />
+            </ListItemIcon>
+            <ListItemText primary="Learning" />
+          </ListItem>
           <ListItem component={Link} to='/blog-post-2' button className={classes.nested}>
             <ListItemIcon>
               <ScreenLockPortraitIcon />

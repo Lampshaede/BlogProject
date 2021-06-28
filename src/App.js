@@ -9,6 +9,7 @@ import AboutMe from './components/AboutMe';
 import HomePage from './components/HomePage';
 import ObjectsPage from './components/ObjectsPage';
 import SSL from './components/SSL';
+import Learning from './components/Learning';
 function App() {
   
   return (
@@ -20,6 +21,9 @@ function App() {
       </Route>
       <Route path='/discord'>
         <Discord />
+      </Route>
+      <Route path='/blog-post-0'>
+        <Learning />
       </Route>
       <Route path='/blog-post-1'>
         <WebDevOverview />

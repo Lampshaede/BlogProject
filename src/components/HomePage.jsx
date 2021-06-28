@@ -24,6 +24,12 @@ const HomePage = () => {
     local: true,
   },
   {
+    name: 'Learning Methods',
+    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858920319409979432/history_edu.png',
+    url: '/blog-post-0',
+    local: true,
+  },
+  {
     name: 'Web Development Overview',
     path: 'https://cdn.discordapp.com/attachments/303544651200331776/858724186817560576/img_565446.png',
     url: '/blog-post-1',
