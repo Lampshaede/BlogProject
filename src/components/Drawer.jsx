@@ -107,6 +107,12 @@ export default function TemporaryDrawer() {
             </ListItemIcon>
             <ListItemText primary="Objects Demo" />
           </ListItem>
+          <ListItem component={Link} to='/blog-post-4' button className={classes.nested}>
+            <ListItemIcon>
+              <ScreenLockPortraitIcon />
+            </ListItemIcon>
+            <ListItemText primary={`SSL & TLS`} />
+          </ListItem>
         </List>
       </Collapse>
       <ListItem component={Link} to='/contact' button key={'Contact'}>

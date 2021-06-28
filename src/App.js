@@ -8,7 +8,7 @@ import ContactPage from './components/ContactPage';
 import AboutMe from './components/AboutMe';
 import HomePage from './components/HomePage';
 import ObjectsPage from './components/ObjectsPage';
-
+import SSL from './components/SSL';
 function App() {
   
   return (
@@ -29,6 +29,9 @@ function App() {
       </Route>
       <Route path='/blog-post-3'>
         <ObjectsPage />
+      </Route>
+      <Route path='/blog-post-4'>
+        <SSL />
       </Route>
       <Route path='/contact'>
         <ContactPage />

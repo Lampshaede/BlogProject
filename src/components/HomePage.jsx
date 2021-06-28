@@ -36,6 +36,12 @@ const HomePage = () => {
     local: true,
   },
   {
+    name: 'SSL & TLS',
+    path: 'https://cdn.discordapp.com/attachments/303544651200331776/858723371495194654/screen-lock-portrait_118698.png',
+    url: '/blog-post-4',
+    local: true,
+  },
+  {
     name: 'About Me',
     path: 'https://cdn.discordapp.com/attachments/303544651200331776/858750651177631764/assignment_ind1.png',
     url: '/about',
